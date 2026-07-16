@@ -87,9 +87,9 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         content:
           "ช่างนาฬิกาผู้ได้รับการรับรอง เชี่ยวชาญการซ่อม บูรณะ และดูแลนาฬิกาหรูและนาฬิกาวินเทจ คืนความเที่ยงตรง พร้อมรับประกัน 12 เดือน",
       },
-      { name: "author", content: "Atelier Horloge" },
-      { property: "og:site_name", content: "Atelier Horloge" },
-      { property: "og:title", content: "Atelier Horloge — ซ่อมและบูรณะนาฬิกาหรู" },
+      { name: "author", content: "Thirakan" },
+      { property: "og:site_name", content: "Thirakan" },
+      { property: "og:title", content: "Thirakan — ซ่อมและบูรณะนาฬิกา" },
       {
         property: "og:description",
         content:
