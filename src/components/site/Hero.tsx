@@ -62,13 +62,15 @@ export function Hero() {
           transition={{ duration: 0.8, delay: 0.5, ease: "easeOut" }}
           className="mt-10 flex flex-wrap items-center gap-3"
         >
-          <Link
-            to="/contact"
+          <a
+            href="https://line.me/R/ti/p/@282cafil"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center gap-2 rounded-xl bg-[color:var(--brand)] px-6 py-3.5 text-sm font-semibold text-white shadow-elegant transition-all hover:-translate-y-0.5 hover:bg-[color:var(--brand-accent)]"
           >
             จองซ่อมนาฬิกา
             <ArrowRight className="h-4 w-4" />
-          </Link>
+          </a>
           <Link
             to="/services"
             className="inline-flex items-center gap-2 rounded-xl border border-ink/20 bg-white px-6 py-3.5 text-sm font-semibold text-ink transition-all hover:border-ink/40 hover:bg-[color:var(--surface)]"
