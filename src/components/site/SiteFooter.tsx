@@ -1,7 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { Facebook, MessageCircle, Music2, Phone, MapPin } from "lucide-react";
 import { NAV_LINKS } from "./nav";
-import logo from "@/assets/logo.png";
+import logo from "@/assets/LOGO-02.png";
 
 export function SiteFooter() {
   return (
@@ -13,7 +13,7 @@ export function SiteFooter() {
               <img
                 src={logo}
                 alt="Atelier Horloge"
-                className="h-10 w-auto brightness-0 invert"
+                className="h-15 w-auto brightness-0 invert"
               />
             </div>
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-white/70">
@@ -22,20 +22,22 @@ export function SiteFooter() {
             </p>
           </div>
 
-          <div>
-            <h4 className="font-display text-sm font-semibold uppercase tracking-wider text-white/60">
-              ลิงก์ด่วน
-            </h4>
-            <ul className="mt-5 space-y-3 text-sm">
-              {NAV_LINKS.map((l) => (
-                <li key={l.to}>
-                  <Link to={l.to} className="text-white/85 transition-colors hover:text-white">
-                    {l.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
+          {NAV_LINKS.length > 0 && (
+            <div>
+              <h4 className="font-display text-sm font-semibold uppercase tracking-wider text-white/60">
+                ลิงก์ด่วน
+              </h4>
+              <ul className="mt-5 space-y-3 text-sm">
+                {NAV_LINKS.map((l) => (
+                  <li key={l.to}>
+                    <Link to={l.to} className="text-white/85 transition-colors hover:text-white">
+                      {l.label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
 
           <div>
             <h4 className="font-display text-sm font-semibold uppercase tracking-wider text-white/60">

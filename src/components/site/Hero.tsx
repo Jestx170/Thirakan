@@ -52,8 +52,7 @@ export function Hero() {
           transition={{ duration: 0.8, delay: 0.35, ease: "easeOut" }}
           className="mt-6 max-w-xl text-lg leading-relaxed text-ink-soft sm:text-xl"
         >
-          บริการซ่อมนาฬิกา 
-          พร้อมเครือข่ายร้านพาร์ทเนอร์ที่ช่วยให้คุณเข้าถึงบริการได้สะดวกยิ่งขึ้น
+          บริการซ่อมนาฬิกาที่ช่วยให้คุณเข้าถึงบริการได้สะดวกยิ่งขึ้น
         </motion.p>
 
         <motion.div

@@ -47,7 +47,7 @@ export function ProcessTimeline() {
     <Section tone="default">
       {/* Centered heading */}
       <div className="mx-auto max-w-2xl text-center">
-        <span className="text-xs font-semibold uppercase tracking-[0.2em] text-[color:var(--brand)]">
+        <span className="text-lg font-semibold uppercase tracking-[0.2em] text-[color:var(--brand)]">
           ขั้นตอนการซ่อม
         </span>
         <h2 className="mt-4 font-display text-3xl font-semibold text-ink sm:text-4xl lg:text-5xl">

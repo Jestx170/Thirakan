@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { NAV_LINKS } from "./nav";
 import { cn } from "@/lib/utils";
-import logo from "@/assets/logo.png";
+import logo from "@/assets/Final-AR (1).png";
 
 export function SiteHeader() {
   const pathname = useRouterState({ select: (s) => s.location.pathname });
@@ -42,7 +42,7 @@ export function SiteHeader() {
           <img
             src={logo}
             alt="Atelier Horloge"
-            className="h-7 w-auto lg:h-12"
+            className="h-7 w-auto lg:h-25"
           />
         </Link>
 
@@ -66,8 +66,10 @@ export function SiteHeader() {
         </nav>
 
         <div className="flex items-center gap-2">
-          <Link
-            to="/contact"
+          <a
+            href="https://line.me/R/ti/p/@282cafil"
+            target="_blank"
+            rel="noopener noreferrer"
             className={cn(
               "hidden rounded-lg px-4 py-2 text-sm font-semibold transition-all lg:inline-flex",
               solid
@@ -76,7 +78,7 @@ export function SiteHeader() {
             )}
           >
             จองซ่อม
-          </Link>
+          </a>
           <button
             aria-label={open ? "ปิดเมนู" : "เปิดเมนู"}
             onClick={() => setOpen((v) => !v)}
@@ -104,12 +106,14 @@ export function SiteHeader() {
                 {l.label}
               </Link>
             ))}
-            <Link
-              to="/contact"
+            <a
+              href="https://line.me/R/ti/p/@282cafil"
+              target="_blank"
+              rel="noopener noreferrer"
               className="mt-2 rounded-lg bg-[color:var(--brand)] px-4 py-3 text-center text-sm font-semibold text-white hover:bg-[color:var(--brand-accent)]"
             >
               จองซ่อม
-            </Link>
+            </a>
           </nav>
         </div>
       )}
