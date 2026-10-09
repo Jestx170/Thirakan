@@ -1,6 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { motion } from "framer-motion";
-import { ShieldCheck, Cog, BadgeCheck, ArrowRight } from "lucide-react";
+import { ShieldCheck, Cog, BadgeCheck, ArrowRight, Camera } from "lucide-react";
 import heroImage from "@/assets/watchmaker-hero.jpg";
 
 // const badges = [
@@ -76,6 +76,15 @@ export function Hero() {
           >
             ดูบริการของเรา
           </Link>
+          <a
+            href="https://photobooth-five-lyart.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 rounded-xl border border-ink/20 bg-white px-6 py-3.5 text-sm font-semibold text-ink transition-all hover:border-ink/40 hover:bg-[color:var(--surface)]"
+          >
+            <Camera className="h-4 w-4" aria-hidden="true" />
+            ถ่ายรูป Photobooth
+          </a>
         </motion.div>
 
         {/* <motion.div
